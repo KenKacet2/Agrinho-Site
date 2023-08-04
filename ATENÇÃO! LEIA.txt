@@ -11,3 +11,5 @@ Casaco
 Lixo
 
 Eventualmente pode vir a ocorrer de certos objetos não carregarem, para evitar isto, experimente deixar a página carregar completamente(Mesmo não tendo suas imagens carregadas, ainda é possível coleta-los, basta clicar em suas hitboxes).
+
+Recomenda-se 25% de zoom
