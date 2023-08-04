@@ -103,7 +103,7 @@ function Mover() {
    document.getElementById('pedras').style.left = "120%";
    document.getElementById('hitpedras').style.zIndex = "-2";
    document.getElementById('hitpedras').style.cursor = "default"
-   document.getElementById('hitespada').style.zIndex = "5";
+   document.getElementById('hitespada').style.zIndex = "8";
    document.getElementById('hitpedras2').style.zIndex = "-2";
 
    document.getElementById("ARRASTANDO").play();
@@ -284,7 +284,7 @@ function Desligar(){
    
    document.getElementById("TV2").style.zIndex = "-11";
    document.getElementById("hittv").style.zIndex = "-11";
-   document.getElementById("hittv2").style.zIndex = "5";
+   document.getElementById("hittv2").style.zIndex = "8";
 
    document.getElementById("botao").play();
    document.getElementById("TVSOM2").pause();
