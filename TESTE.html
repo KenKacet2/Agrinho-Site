@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+<html lang="pt-br">
+<div class="frame">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="TESTE_CSS.css">
+    <div class="camera">
+    <div class="map pixel-art">
+</head>
+<body>
+    <title>Better World</title>
+
+            <!-- Espada e Rochas-->
+    <div id="hitpedras" class="hit" onclick="Mover()"></div>
+    <div id="hitpedras2" class="hit2" onclick="No()"></div>
+    <p class="FALA2" id="FALA2">Eu deveria investigar aquela mão<br>
+         primeiro, além do mais, ela está no caminho</p>
+    <p class="FALA9" id="FALA9">Bizarro...</p>
+    <div id="pedras" class="rochas"></div>
+    <div id="espada" class="sword"></div>
+    <div id="hitespada" class="hitespada" onclick="Grab(); Add()"></div>
+    <video autoplay muted loop src="OBJETOS/SOUL.mp4" class="SOULS" id="almas"></video>
+    
+    
+                <!-- SACO -->
+
+    <p class="FALA5" id="FALA5">Que nojo!</p>
+    <video autoplay muted loop src="OBJETOS/LIXO.mp4" class="sacoXY" id="Bag"></video>
+    <div id="hitsaco" class="hitsaco" onclick="Saco(); Add()"></div>
+ 
+
+
+                <!-- GARRAFA -->
+    
+    <img src="OBJETOS/GARRAFAPEGA.png" class="Linha" id="Linha">
+    <img src="OBJETOS/GARRAFA.png" class="Garrafa" id="Garrafa">
+    <div id="hitgarrafa" class="hitgarrafa" onclick="Garrafa(); Add()"></div>
+    
+
+
+                <!--  ROUPA  -->
+
+    <video autoplay muted loop src="OBJETOS/CASACO.mp4" class="roupa" id="roupa"></video>
+    <div id="hitroupa" class="hitroupa" onclick="Roupa(); Add()"></div>
+    <p class="FALA3" id="FALA3">Minha mãe já me fez um desses...</p>
+
+
+                <!--   TV    -->
+
+    <video autoplay muted loop src="OBJETOS/TV1.mp4" class="TV" id="TV"></video>   
+    <video autoplay muted loop src="OBJETOS/TV2.mp4" class="TV2" id="TV2"></video>
+    <div class="hittv" id="hittv" onclick="Program()"></div>
+    <div class="hittv2" id="hittv2" onclick="Coletar(); Add()"></div>
+
+                <!--  TACO   -->
+
+    <p class="FALA10" id="FALA10">Não era pra ser a bola?</p>
+    <img src="OBJETOS/TACO.png" class="TACO" id="taco">
+    <div id="hittaco" class="hittaco" onclick="Taco(); Add()"></div>
+
+                <!-- UKULELE -->
+    
+    <video muted src="OBJETOS/NOTAS.mp4" class="NOTAS" id="notas"></video>
+    <img src="OBJETOS/UKULELE.png" class="UKULELE" id="ukulele">
+    <div id="hitukulele" class="hitukulele" onclick="UKULELE(); Add()"></div>
+    <div id="hitukulele2" class="hitukulele2" onclick="UKULELE2()"></div>
+    <p class="FALA4" id="FALA4">Isso foi bonito</p>
+
+                <!--  CARTA  -->
+
+    <video autoplay muted loop src="OBJETOS/CARTA.mp4" class="CARTA" id="carta"></video>
+    <div id="hitcarta" class="hitcarta" onclick="CARTA(); Add()"></div>
+    <p class="FALA11" id="FALA11">Infelizmente os correios<br>
+    não funcionam por aqui</p>
+
+
+                <!--ESQUELETO-->
+
+    <img src="OBJETOS/MÃO.png" class="MÃO" id="mão">
+    <div id="hitmão" class="hitmão" onclick="ESQUELETO1()"></div>
+    <p class="FALA6" id="FALA6">...</p>
+
+    <img src="OBJETOS/BRACO.png" class="BRACO" id="braco">
+    <div id="hitbraco" class="hitbraco" onclick="ESQUELETO2()"></div>
+    <p class="FALA7" id="FALA7">Quase lá...</p>
+
+
+    <img src="OBJETOS/TORSO.png" class="TORSO" id="torso">
+    <div id="hittorso" class="hittorso" onclick="ESQUELETO3()"></div>
+    <div id="hittorso2" class="hittorso2" onclick="ESQUELETO3(); Add()"></div>
+    <p class="FALA8" id="FALA8">Ai está!</p>
+
+    <img src="OBJETOS/ESQUELETO.png" class="ESQUELETO" id="esqueleto">
+    <div id="hitesqueleto" class="hitesqueleto"></div>
+
+                <!-- Cenário -->
+
+    <div id="floor" class="areia"></div>
+    <div id="fundo_floor" class="fundo"></div>
+    <div id="teto" class="teto"></div>
+    <div id="fundo_floor2" class="fundo2"></div>
+    
+
+
+                <!-- BOLHAS! -->
+    <div class="Bolhas">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas1">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas2" id="Bolhas2">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas3" id="Bolhas3">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas4" id="Bolhas4">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas5" id="Bolhas5">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas6" id="Bolhas6">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas7" id="Bolhas7">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas8" id="Bolhas8">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas9" id="Bolhas9">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas10" id="Bolhas10">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas11" id="Bolhas11">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas12" id="Bolhas12">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas13" id="Bolhas13">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+    <div class="Bolhas14" id="Bolhas14">
+    <video autoplay muted loop src="OBJETOS/BOLHAS.mp4"></video>
+    </div>
+
+
+
+    
+
+    <div class="character" facing="down" walking="true">
+    </div>
+    </div>
+
+    <p class="FALA" id="FALA">Reportagem sobre as crises climáticas e ambientais.<br>
+Deveria voltar logo ao trabalho...</p>
+    <div class="ProgramBack" id="Back"></div>
+    <video autoplay muted loop src="OBJETOS/PROGRAMA.mp4" class="Program" id="Program"></div>
+    <img src="OBJETOS/button.png" class="button" id="button" onclick="Desligar()"></img>
+    <img src="OBJETOS/button2.png" class="button2" id="button2" onclick="Desligar()"></img>
+
+
+    <div class="hitstart" id="hitstart" onclick="Comecar()"></div>
+    <div class="hithint" id="hithint" onclick="Brief()"></div>
+    <p class="PS3" id="PS3">Utilize as setas ou WASD<br>
+        para se movimentar</p>
+    <p class="PS1" id="PS1">Click to Start<br>
+        (Zoom de 25% recomendado, sério)</button></p>
+    <img src="FUNDO/START.png" class="start" id="start"></div>
+    <img src="FUNDO/START1.png" class="start1" id="start1"></div>
+    <p class="PS2" id="PS2">Você é um nobre catador de lixo.<br>
+        Sua missão? Limpar as profundezas do oceano!<br>
+        Use o cursor para interagir com o cenário.
+    </p>
+
+    <video loop class="FINAL" id="FINAL" src="FUNDO/FIM.mp4"></video>
+
+    <audio id="PLASTIC" src="AUDIO/PLASTIC.mp3">
+    <audio id="ESPADA2" src="AUDIO/ESPADA2.mp3">
+    <audio loop autoplay id="FUNDO1" src="AUDIO/FUNDO1.mp3">
+    <audio id="ARRASTANDO" src="AUDIO/ARRASTANDO.mp3">
+    <audio loop id="ESPADA" src="AUDIO/ESPADAFUNDO.mp3">
+    <audio id="SAND" src="AUDIO/GARRAFA.mp3">
+    <audio id="ROUPA" src="AUDIO/ROUPA.mp3">
+    <audio id="TVSOM" src="AUDIO/TVSOM.mp3">
+    <audio id="TVSOM2" src="AUDIO/TVSOM.mp3">
+    <audio id="botao" src="AUDIO/BUTTON.mp3">    
+    <audio loop id="PROGRAMASOM" src="AUDIO/PROGRAMASOM.mp3">
+    <audio id="TVCOLETA" src="AUDIO/TVCOLETA.mp3">
+    <audio id="TACOSOM" src="AUDIO/TACOSOM.mp3">
+    <audio id="UKULELESOM" src="AUDIO/UKULELESOM.mp3">
+    <audio id="ESQUELETOSOM" src="AUDIO/ESQUELETOSOM.mp3">
+    <audio id="ESQUELETOSOM2" src="AUDIO/ESQUELETOSOM2.mp3">
+    <audio id="ESQUELETOSOM3" src="AUDIO/ESQUELETOSOM3.mp3">
+    <audio id="CARTASOM" src="AUDIO/CARTASOM.mp3">
+    <audio id="CLICK" src="AUDIO/CLICK.mp3">
+    </audio>
+
+
+   <script src="TESTE_JS.js">
+
+   </script>
+   </body>
+   </html>
