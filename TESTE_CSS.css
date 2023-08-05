@@ -1182,7 +1182,7 @@ body {
    left: 80%;
    position: absolute;
    cursor: pointer;
-   z-index: 7;
+   z-index: 8;
    rotate: -1deg;
 }
 
@@ -1203,7 +1203,7 @@ body {
 
    60% {
       opacity: 100%;
-      z-index: 20;
+      z-index: 7;
    }
 
    100% {
