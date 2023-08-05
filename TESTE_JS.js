@@ -202,7 +202,7 @@ function ESQUELETO1() {
 
    document.getElementById("hitmão").style.cursor = "default";
    document.getElementById("hitmão").style.zIndex = "-2";
-   document.getElementById("hitbraco").style.zIndex = "8";
+   document.getElementById("hitbraco").style.zIndex = "9";
    document.getElementById("mão").style.opacity = "0%";
    document.getElementById("braco").style.opacity = "100%";
    document.getElementById("FALA6").style.animation = "FALA6 1s ease forwards";
@@ -214,9 +214,9 @@ function ESQUELETO2() {
 
    document.getElementById("hitbraco").style.cursor = "default";
    document.getElementById("hitbraco").style.zIndex = "-2";
-   document.getElementById("hittorso").style.zIndex = "8";
+   document.getElementById("hittorso").style.zIndex = "9";
    document.getElementById("hittorso").style.cursor = "pointer";
-   document.getElementById("hittorso2").style.zIndex = "8";
+   document.getElementById("hittorso2").style.zIndex = "9";
    document.getElementById("hittorso2").style.cursor = "pointer";
    document.getElementById("braco").style.opacity = "0%";
    document.getElementById("torso").style.opacity = "100%";
