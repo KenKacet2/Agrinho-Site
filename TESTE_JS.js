@@ -311,8 +311,6 @@ var TVSOM = document.getElementById("TVSOM");
 TVSOM.pause();
 })
 
-var fundo = document.getElementById("FUNDO1");
-
 window.addEventListener('click', () => {
    var fundo = document.getElementById("FUNDO1");
    fundo.play();
@@ -320,21 +318,22 @@ window.addEventListener('click', () => {
 })
 
 function Comecar() {
-   document.getElementById("start").style.animation = "Starting 3s ease-in forwards";
-   document.getElementById("PS1").style.animation = "Starting 3s ease-in forwards";
+   document.getElementById("start").style.animation = "Starting 1s ease-in forwards";
+   document.getElementById("PS1").style.animation = "Starting 1s ease-in forwards";
    document.getElementById("hitstart").style.zIndex = "-19";
    document.getElementById("CLICK").play();
 }
 
 function Brief() {
-   document.getElementById("start1").style.animation = "Starting 3s ease-in forwards";
-   document.getElementById("PS2").style.animation = "Starting 3s ease-in forwards";
+   document.getElementById("start1").style.animation = "Starting 2s ease-in forwards";
+   document.getElementById("PS2").style.animation = "Starting 1s ease-in forwards";
    document.getElementById("PS3").style.animation = "PS 10s ease-in forwards";
    document.getElementById("hithint").style.zIndex = "-20";
 }
 
 var FIM2=9;
 var FIM=0;
+var fundo = document.getElementById("FUNDO1");
 
 function Add(){
 
@@ -346,6 +345,7 @@ function Add(){
       fundo.pause();
       document.getElementById("FINAL").play();
       document.getElementById("FINAL").style.animation = "FINAL 2s ease-in forwards";
+      document.getElementById("start1").style.animation = "FINAL 2s ease-in forwards";
       document.getElementById("FINAL").setAttribute = "loop";
    }
 }
