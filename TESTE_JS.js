@@ -256,7 +256,7 @@ function Program(){
 
    document.getElementById("Back").style.zIndex = "7";
    document.getElementById("Back").style.opacity = "100%";
-   document.getElementById("Program").style.zIndex = "11";
+   document.getElementById("Program").style.zIndex = "20";
    document.getElementById("Program").style.opacity = "100%";
    document.getElementById("FALA").style.opacity = "100%";
    document.getElementById("FALA").style.zIndex = "9";
